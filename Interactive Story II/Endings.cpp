@@ -4,6 +4,7 @@
 #include <ctime>
 #include "Setup.h"
 #include "Choices.h"
+#include "Endings.h"
 
 using namespace std;
 
@@ -28,6 +29,7 @@ void EndingAB()
 	FinalEnding();
 }
 
+//Ending if they chose 'S'
 void EndingB()
 {
 	cout << "\nYou decide to repair the starships, thinking that it is better to focus on your offensive capabilities.";
@@ -37,6 +39,7 @@ void EndingB()
 	FinalEnding();
 }
 
+//Ending if they chose 'SG'
 void EndingBB()
 {
 	cout << "\nRealizing that the shield generator is more important, you quickly head towards it.";
@@ -47,6 +50,7 @@ void EndingBB()
 	FinalEnding();
 }
 
+//Ending if they chose 'P'
 void EndingC()
 {
 	cout << "\nYou try and blast the Vulture droid to smithereens, but you miss all your shots!";
@@ -55,6 +59,7 @@ void EndingC()
 	FinalEnding();
 }
 
+//Ending if they chose 'R'
 void EndingCB()
 {
 	cout << "\nNot trusting your accuracy, you abandon your station and run away as fast as you can.";
@@ -65,11 +70,12 @@ void EndingCB()
 	FinalEnding();
 }
 
+//Final Ending to the story, no matter what path you chose.
 string FinalEnding()
 {
 	string UC4;
 
-	cout << "\n\n\t\t\t *** The End. *** \n";
+	cout << "\n\n\t\t      *** The End. *** \n";
 	cout << "\n\t\t *** Thanks for playing! *** \n\n";
 
 	cout << "\nWould you like to play again? Press 'Y' for Yes and 'N' for No and press enter. ";
